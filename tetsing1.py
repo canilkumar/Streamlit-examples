@@ -12,7 +12,7 @@ customer_res_model = load_model('./Customer_Response_2.h5')
 
 #pricing_res_model = load_model('./Pricing_13.h5')
 
-exclusions_res_model = load_model('./Insurance_Exclusion_13.h5')
+#exclusions_res_model = load_model('./Insurance_Exclusion_13.h5')
 
 claim_res_model = load_model('./Claim_Process_1.h5')
 
@@ -55,10 +55,10 @@ def predict_customer_res(audio):
     #index=np.argmax(prob[0])
     #return (classes[index],np.amax(prob[0]))
 
-def predict_exclusion(audio):
-    prob=exclusions_res_model.predict(audio.reshape(1,40,1))
-    index=np.argmax(prob[0])
-    return (classes[index],np.amax(prob[0]))
+#def predict_exclusion(audio):
+    #prob=exclusions_res_model.predict(audio.reshape(1,40,1))
+    #index=np.argmax(prob[0])
+    #return (classes[index],np.amax(prob[0]))
 
 def predict_claim(audio):
     prob=claim_res_model.predict(audio.reshape(1,40,1))
