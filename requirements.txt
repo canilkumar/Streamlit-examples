@@ -1,0 +1,8 @@
+keras
+tensorflow
+librosa
+sklearn
+numpy==1.21
+matplotlib
+helper
+seaborn
